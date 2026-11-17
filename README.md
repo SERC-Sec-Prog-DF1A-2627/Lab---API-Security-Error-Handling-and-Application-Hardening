@@ -1,7 +1,5 @@
 # Week 9: API Security, Error Handling and Application Hardening
 
-Level 6 · Week commencing 16 November 2026 · Two independent 120-minute blocks
-
 Develop a protected REST-style API, repair permission failures, create safe error responses and logs, then test browser hardening and rate limiting. This is a guided Flask/Jinja/SQLite lab for students with limited Flask experience.
 
 ## Start here
