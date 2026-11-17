@@ -146,7 +146,7 @@ Use a claim, evidence and limitation structure: “The allowlist rejects the pro
 
 **Extension:** add a test for `{"content":"legitimate","is_reviewed":1}` and check that neither field changes. Discuss rejecting unknown fields versus silently ignoring them, including client mistakes and observability.
 
-**Completion:** a before/after table, passing tests, and one paragraph explaining why parameterised SQL does not solve mass assignment. Full reference: `solutions/exercise-2/`.
+**Completion:** a before/after table, passing tests, and one paragraph explaining why parameterised SQL does not solve mass assignment.
 
 ## Reading a test
 
@@ -177,7 +177,7 @@ Using the viewer's own note isolates the **role** check. Using a valid CSRF toke
 - **Syntax/indentation error:** Python uses indentation for blocks. Functions inside `create_app` have four spaces, their bodies eight. In VS Code, undo the last paste and match the neighbouring route.
 - **A test fails:** read the failing test name, then the `assert` and the actual value. Run just that test with `python -m pytest -q tests/test_api.py -k NAME`. A failed security assertion is different from an import or syntax error.
 
-Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, read the relevant completed function under the root `solutions/` directory, explain each line, and then implement it in your starter. You can run a solution independently. No earlier exercise is a prerequisite.
+Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, use the failing test and troubleshooting steps to isolate the control, inspect the relevant starter function, and record any unresolved questions in your evidence. No earlier exercise is a prerequisite.
 
 ## Further reading
 

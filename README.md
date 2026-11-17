@@ -57,9 +57,9 @@ A SQLite row supports `note["title"]` like a dictionary, but is not itself a JSO
 
 ## Solutions and evidence
 
-Completed runnable references are included in [solutions/](solutions/README.md), including `exercise-1/` through `exercise-4/` and an additional `activity-1/` refresher. Use them to learn, and record any reference use in each exercise's `evidence.md`. The emphasis is explanation and test evidence, not simply obtaining a green summary.
+Completed solutions can be found in the lab template repository's [`solutions` branch](https://github.com/SERC-Sec-Prog-DF1A-2627/Lab---API-Security-Error-Handling-and-Application-Hardening/tree/solutions/solutions). Use them to learn, and record any reference use in each exercise's `evidence.md`. The emphasis is explanation and test evidence, not simply obtaining a green summary.
 
-[Expected test results](docs/EXPECTED-TEST-RESULTS.md) distinguishes deliberate starter failures from setup errors. [Concept notes](docs/CONCEPT-NOTES.md) explains Flask, Jinja, dictionaries, decorators, HTTP, CSRF and testing. [Troubleshooting](docs/TROUBLESHOOTING.md) covers common problems. Do not run pytest across all applications together; run it in one folder or use `python tools/check_all.py solutions`.
+[Expected test results](docs/EXPECTED-TEST-RESULTS.md) distinguishes deliberate starter failures from setup errors. [Concept notes](docs/CONCEPT-NOTES.md) explains Flask, Jinja, dictionaries, decorators, HTTP, CSRF and testing. [Troubleshooting](docs/TROUBLESHOOTING.md) covers common problems. Do not run pytest across all applications together; run it in one folder.
 
 ## Environment details
 

@@ -208,7 +208,7 @@ Create `tests/test_student.py`. Adapt the viewer test above to check an **editor
 
 Record a successful update, one role denial, one ownership denial and one rejected protected field. For each, state why another control cannot replace it. Evaluate whether choosing `404` for inaccessible records improves confidentiality and what limitation remains.
 
-**Completion:** both routes implemented, supplied tests green, one additional negative test and a short explanation in `evidence.md`. A complete reference is in `solutions/exercise-1/` at repository root.
+**Completion:** both routes implemented, supplied tests green, one additional negative test and a short explanation in `evidence.md`.
 
 ## Troubleshooting and working independently
 
@@ -222,7 +222,7 @@ Record a successful update, one role denial, one ownership denial and one reject
 - **Syntax/indentation error:** Python uses indentation for blocks. Functions inside `create_app` have four spaces, their bodies eight. In VS Code, undo the last paste and match the neighbouring route.
 - **A test fails:** read the failing test name, then the `assert` and the actual value. Run just that test with `python -m pytest -q tests/test_api.py -k NAME`. A failed security assertion is different from an import or syntax error.
 
-Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, read the relevant completed function under the root `solutions/` directory, explain each line, and then implement it in your starter. You can run a solution independently. No earlier exercise is a prerequisite.
+Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, use the failing test and troubleshooting steps to isolate the control, inspect the relevant starter function, and record any unresolved questions in your evidence. No earlier exercise is a prerequisite.
 
 ## Further reading
 

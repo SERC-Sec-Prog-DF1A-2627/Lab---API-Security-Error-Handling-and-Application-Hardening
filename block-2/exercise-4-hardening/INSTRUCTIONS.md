@@ -150,7 +150,7 @@ Rate limits reduce resource abuse but do not prevent all denial-of-service attac
 
 **Independent task:** explain why the test `test_budget_separate_by_authenticated_user` uses two separate clients. Propose a case involving an expensive PATCH endpoint and identify the key, window, budget and a false-positive risk. Keep the supplied GET contract unchanged so the tests remain comparable.
 
-**Completion:** header checks and all tests passing, evidence of a sixth request receiving 429, a configuration review, and one limitation with a proposed improvement. Reference: `solutions/exercise-4/`.
+**Completion:** header checks and all tests passing, evidence of a sixth request receiving 429, a configuration review, and one limitation with a proposed improvement.
 
 ## Troubleshooting and working independently
 
@@ -164,7 +164,7 @@ Rate limits reduce resource abuse but do not prevent all denial-of-service attac
 - **Syntax/indentation error:** Python uses indentation for blocks. Functions inside `create_app` have four spaces, their bodies eight. In VS Code, undo the last paste and match the neighbouring route.
 - **A test fails:** read the failing test name, then the `assert` and the actual value. Run just that test with `python -m pytest -q tests/test_api.py -k NAME`. A failed security assertion is different from an import or syntax error.
 
-Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, read the relevant completed function under the root `solutions/` directory, explain each line, and then implement it in your starter. You can run a solution independently. No earlier exercise is a prerequisite.
+Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, use the failing test and troubleshooting steps to isolate the control, inspect the relevant starter function, and record any unresolved questions in your evidence. No earlier exercise is a prerequisite.
 
 ## Further reading
 

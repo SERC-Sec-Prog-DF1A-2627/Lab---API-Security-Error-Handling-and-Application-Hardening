@@ -184,7 +184,7 @@ python -m pytest -q
 
 **Evaluation:** what diagnostic value is lost by omitting exception messages? Propose a restricted diagnostic workflow, redaction policy and retention/access rules. Consider logging system failures, disk exhaustion and alert fatigue. This exercise checks the application logger; reverse proxies and hosting access logs require their own configuration.
 
-**Completion:** safe HTTP/unexpected handlers, safe structured logs, passing tests and a correlated response/log example. Reference: `solutions/exercise-3/`.
+**Completion:** safe HTTP/unexpected handlers, safe structured logs, passing tests and a correlated response/log example.
 
 ## Reading a test
 
@@ -215,7 +215,7 @@ Using the viewer's own note isolates the **role** check. Using a valid CSRF toke
 - **Syntax/indentation error:** Python uses indentation for blocks. Functions inside `create_app` have four spaces, their bodies eight. In VS Code, undo the last paste and match the neighbouring route.
 - **A test fails:** read the failing test name, then the `assert` and the actual value. Run just that test with `python -m pytest -q tests/test_api.py -k NAME`. A failed security assertion is different from an import or syntax error.
 
-Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, read the relevant completed function under the root `solutions/` directory, explain each line, and then implement it in your starter. You can run a solution independently. No earlier exercise is a prerequisite.
+Work solo through the same predict, run, explain and repair sequence. Keep a small evidence record using `evidence.md`. If stuck, use the failing test and troubleshooting steps to isolate the control, inspect the relevant starter function, and record any unresolved questions in your evidence. No earlier exercise is a prerequisite.
 
 ## Further reading
 
