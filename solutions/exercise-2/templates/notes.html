@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your notes</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head>
+<body><main><h1>Your notes</h1><p>Signed in as {{ user['username'] }}. Role: {{ user['role'] }}.</p>
+<p>Each user sees their own notes. Admins follow the same ownership rule in this exercise.</p>
+{% for note in notes %}<article><h2>{{ note['title'] }}</h2><p>{{ note['content'] }}</p>
+<p>Note {{ note['id'] }}. <a href="{{ url_for('get_note_api',note_id=note['id']) }}">View JSON</a></p>
+{% if can_edit_notes(user) %}<form method="post" action="{{ url_for('edit_note_web',note_id=note['id']) }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+<label>Title <input name="title" value="{{ note['title'] }}" maxlength="80" required></label>
+<label>Content <textarea name="content" maxlength="2000">{{ note['content'] }}</textarea></label>
+<button type="submit">Save note</button></form>{% endif %}</article>{% endfor %}
+<form method="post" action="{{ url_for('logout') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">Sign out</button></form>
+</main></body></html>
