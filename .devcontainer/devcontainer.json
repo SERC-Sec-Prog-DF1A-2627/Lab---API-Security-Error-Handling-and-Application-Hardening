@@ -1,8 +1,6 @@
 {
-  "name": "Week 09 Python 3.14",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "API Security Python 3.14",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14",
   "remoteUser": "vscode",
   "forwardPorts": [
     5000
@@ -13,7 +11,8 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "python -m venv .venv && .venv/bin/python -m pip install -r requirements.txt",
+  // "postCreateCommand": "python -m venv .venv && .venv/bin/python -m pip install -r requirements.txt",
+  "postCreateCommand": "python -m pip install -r requirements.txt",
   "remoteEnv": {
     "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
   },
