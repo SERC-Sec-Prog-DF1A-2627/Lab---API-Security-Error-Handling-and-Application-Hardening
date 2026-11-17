@@ -1,4 +1,4 @@
-# Week 9: API Security, Error Handling and Application Hardening
+# API Security, Error Handling and Application Hardening
 
 Develop a protected REST-style API, repair permission failures, create safe error responses and logs, then test browser hardening and rate limiting. This is a guided Flask/Jinja/SQLite lab for students with limited Flask experience.
 
